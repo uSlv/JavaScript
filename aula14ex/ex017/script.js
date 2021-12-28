@@ -9,12 +9,12 @@ function calcular() {
         //res.innerHTML = `Aqui está a sua tabuada do ${numero}:`
         var c = 1
         tab.innerHTML = ''
-        while(c <=10){
+        while(c <= 10){
             var finish = document.createElement('option')
             finish.text = `${numero} x ${c} = ${numero*c}`
             tab.appendChild(finish)
             c++
         }
-        }
+        
     }
 
