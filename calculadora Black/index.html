@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Black</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="" name="Calculator">
+            <input type="text" name="text1" class="text main-color" disabled> 
+            <input type="text" name="text12" class="text1 main-color" onclick="location.reload()" value="C"> <br>
+
+            <input value="9" type="button" name="botao9" class="num main-color" onclick="displaynum(botao9.value)"> 
+            <input value="8" type="button" name="botao8" class="num main-color" onclick="displaynum(botao8.value)"> 
+            <input value="7" type="button" name="botao7" class="num main-color" onclick="displaynum(botao7.value)"> 
+            <input value="+" type="button" name="addbotao" class="op1" onclick="displaynum(addbotao.value)"> <br>
+
+            <input value="6" type="button" name="botao6" class="num main-color" onclick="displaynum(botao6.value)"> 
+            <input value="5" type="button" name="botao5" class="num main-color" onclick="displaynum(botao5.value)"> 
+            <input value="4" type="button" name="botao4" class="num main-color" onclick="displaynum(botao4.value)"> 
+            <input value="-" type="button" name="subbotao" class="op2" onclick="displaynum(subbotao.value)"> <br>
+
+            <input value="3" type="button" name="botao3" class="num main-color" onclick="displaynum(botao3.value)"> 
+            <input value="2" type="button" name="botao2" class="num main-color" onclick="displaynum(botao2.value)"> 
+            <input value="1" type="button" name="botao1" class="num main-color" onclick="displaynum(botao1.value)"> 
+            <input value="*" type="button" name="multbotao" class="op3" onclick="displaynum(multbotao.value)"> <br>
+
+            <input value="." type="button" name="botaoponto" class="num main-color" onclick="displaynum(botaoponto.value)"> 
+            <input value="0" type="button" name="botao0" class="num main-color" onclick="displaynum(botao0.value)"> 
+            <input value="=" type="button" name="botaoigual" class="num eql" onclick="text1.value=eval(text1.value)">  
+            <input value="/" type="button" name="divbotao" class="op4" onclick="displaynum(divbotao.value)"> <br>
+            
+        </form>
+    </main>
+
+    <script src="scripit.js"></script>
+</body>
+</html>
