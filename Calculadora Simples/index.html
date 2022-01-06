@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <p>Primeiro Número:</p>
+    <input type="number" name="" id="n1">
+    <p>Segundo Número:</p>
+    <input type="number" name="" id="n2"> <br> <br>
+    <button onclick="somar()">Somar</button> <br>
+    <button onclick="subtrair()">Subtrair</button> <br>
+    <button onclick="dividir()">Dividir</button> <br>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <p>O Resultado é : <span></span></p>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var res = document.querySelector('span')
+
+        function somar (){
+            res.innerHTML = parseFloat(n1.value) + parseFloat(n2.value)
+        }
+
+        function subtrair(){
+            res.innerHTML = parseFloat(n1.value) - parseFloat(n2.value)
+        }
+        
+        function dividir(){
+            res.innerHTML = parseFloat(n1.value) / parseFloat(n2.value)
+        }
+
+        function multiplicar(){
+            res.innerHTML = parseFloat(n1.value) * parseFloat(n2.value)
+        }
+    </script>
+</body>
+</html>
