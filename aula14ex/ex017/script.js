@@ -1,20 +1,16 @@
-function calcular() {
-    var n = document.getElementById('n')
-    var tab = document.getElementById('stabuada')
-    var res = document.getElementById('res')
-    if (n.value.length == 0) {
-        window.alert('[ERRO] Nenhum valor!')
+function tabuada() {
+    var num = document.getElementById('txtn')
+    var tab = document.getElementById('seltab')
+    if (num.value.length == 0) {
+        window.alert('Por favor, digite novamente!')
     } else {
-        var numero = Number(n.value)
-        //res.innerHTML = `Aqui está a sua tabuada do ${numero}:`
-        var c = 1
+        var n = Number(num.value)
         tab.innerHTML = ''
-        while(c <= 10){
-            var finish = document.createElement('option')
-            finish.text = `${numero} x ${c} = ${numero*c}`
-            tab.appendChild(finish)
-            c++
+        for(var c = 1; c <= 10; c++){
+            var item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
         }
-        
     }
-
+}

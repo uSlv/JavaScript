@@ -1,9 +1,14 @@
-/*var c = 1
-while (c <= 5){
+
+/*while(c <= 8){
     console.log(c)
     c++
 }*/
 
-for(var c = 1;c <= 5; c++){
+/*do{
+    console.log(c)
+    c++
+}while(c <= 8)*/
+//******************************************************************** */
+for(var c = 1; c <= 5; c++ ){
     console.log(c)
 }
